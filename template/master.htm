@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="page_{{UrlID}} {{SkinClass}} {{AutoCssClass}} {{{LanguageIsoCode2}}} no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="page_{{UrlID}} {{SkinClass}} {{AutoCssClass}} {{{LanguageIsoCode2}}} no-js ie7 IE7 lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="page_{{UrlID}} {{SkinClass}} {{AutoCssClass}} {{{LanguageIsoCode2}}} no-js ie8 IE8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="page_{{UrlID}} {{SkinClass}} {{AutoCssClass}} {{{LanguageIsoCode2}}} no-js ie9 IE9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="{{{LanguageIsoCode2}}}"
+ class="page_{{UrlID}} {{SkinClass}} {{AutoCssClass}} {{{LanguageIsoCode2}}} no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" media="all" href="/template/css/global.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/template/css/layout.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="/template/css/print.css" />
+	<link rel="stylesheet" type="text/css" media="handheld" href="/template/css/handheld.css" />
+	<meta name="generator" content="seven49.net CMS 5.0" />
+	<meta name="description" content="{{description}}" />
+	<meta name="keywords" content="{{keywords}}" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="8" />
+
+
+	<meta http-equiv="X-UA-Compatible" content="edge,chrome=1" />
+	<script src="http://cdn.seven49.net/common/js/vendors/modernizr.custom.js"></script>
+	<script src="http://cdn.seven49.net/common/js/jquery/libs/jquery-1.11.0.min.js"></script>
+	<script src="http://cdn.seven49.net/common/js/jquery/libs/jquery-migrate-1.2.1.min.js"></script>
+
+	<title>{{Title}} {{Config-SiteTitle}}</title>
+	<link rel="apple-touch-icon" href="/template/images/apple-touch-icon.png" />
+	<link rel="icon" type="image/x-icon" href="/template/images/favicon.ico" />
+</head>
+<body class="Page_{{UrlID}} {{SkinClass}} {{AutoCssClass}}">
+<div id="RootContainer" class="RootContainer {{AutoCssClass}}">
+	<form method="post" action="http://cmsapi.seven49.net/FormMail/" id="aspnetForm" enctype="multipart/form-data" class="aspnetForm {{SkinClass}}">
+		<div id="HeaderContainer" class="HeaderContainer">
+			<div id="PrintLogo"></div>
+			<div id="MobileLogo"></div>
+			<div id="DirectLinks">
+				<ul>
+					<li class="MainContent"><a href="#MainContent" accesskey="2">{{Text-cms_waidirectlinksmaincontent}}</a></li>
+					<li class="Navigation"><a href="#MainNavigation" accesskey="1">{{Text-waidirectlinksnavigation}}</a></li>
+				</ul>
+			</div>
+			<div id="LanguageSelection"></div>
+			<div id="PrimaryHeader"></div>
+			<div id="MainNavigation" class="MainNavigation"></div>
+			<div id="SecondaryHeader"></div>
+		</div>
+		<div id="BodyContainer" class="BodyContainer">
+			<div id="LeftColumnContainer" class="LeftColumnContainer">
+				<div id="AdditionalContent1"></div>
+				<div id="TreeNavigation" class="TreeNavigation"></div>
+				<div id="AdditionalContent2"></div>
+			</div>
+			<div id="CenterColumnContainer" class="CenterColumnContainer">
+				<div id="MainContent" class="MainContent">{{{MainContent}}}</div>
+				<div id="CenterColumnAdvertisingRight" class="CenterColumnAdvertisingRight"></div>
+				<div id="CenterColumnAdvertisingBottom" class="CenterColumnAdvertisingBottom"></div>
+			</div>
+			<div id="RightColumnContainer" class="RightColumnContainer">
+				<div id="AdditionalContent3"></div>
+				<div id="Advertising"></div>
+				<div id="AdditionalContent4"></div>
+				<div id="Search"></div>
+			</div>
+		</div>
+		<div id="FooterContainer" class="FooterContainer">
+			<div id="PrimaryFooter"></div>
+			<div id="UtilityFunctions" class="UtilityFunctions">
+				<ul>
+					<li id="UtilityFunctionsGoTop"><a href="#HeaderContainer">{{Config-FFGoTopTitle}}</a></li>
+					<li id="UtilityFunctionsGoBack"><a href="javascript:history.go(-1)">{{Config-FFGoBackTitle}}</a></li><li id="UtilityFunctionsSitemap"><a href="/{{{LanguageIsoCode2}}}/sitemap.htm" accesskey="4">{{Config-FFSitemapTitle}}</a></li>
+					<li id="UtilityFunctionsPrint"><a href="javascript:window.print()">{{Config-FFPrintTitle}}</a></li>
+					<li id="UtilityFunctionsPdf" class="UtilityFunctionsPdf"><a href="http://convert.html2pdf.seven49.net/?url_to_render={{EncodedAbsoluteUrl}}">{{Config-FFPdfTitle}}</a></li>
+				</ul>
+			</div>
+			<div id="SecondaryFooter"></div>
+			<div id="PrintCopyrightAndSource">{{Config-FFPrintSourceTitle}} {{AbsoluteUrl}}</div>
+		</div>
+</form>
+</div>
+<script src="http://cdn.seven49.net/common/js/jquery/seven49/navigation-1.0.min.js"></script>
+<script src="http://cdn.seven49.net/common/js/jquery/seven49/utilities-1.0.min.js"></script>
+<script src="/template/js/controller.js"></script>
+<script>
+	loadContents('{{UrlID}}', '{{LanguageIsoCode2}}');
+</script>
+<script src="/template/js/main.js"></script>
+</body>
+</html>
