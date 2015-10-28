@@ -1,0 +1,31 @@
+<script>
+$('head').prepend('<link rel="stylesheet" href="//cdn.seven49.net/common/css/font-awesome/css/seven49-font-awesome.css" />');
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+<div data-ng-app="searchApp" data-ng-controller="searchController">
+	<span class="error" data-ng-show="Error.length > 0">{{ Error }}</span>
+	<div class="input-field">
+		<input type="text" name="searchKeyword" data-ng-model="filterExpression.searchTerm" id="searchKeyword" placeholder="{{Text-cms_waitemplatesearchplaceholder}}" ng-keyup="$event.keyCode == 13 ? queryServerData() : null" />
+		<img src="http://cdn.seven49.net/common/images/icons/search.png" alt="Suchen" data-ng-click="queryServerData()" />
+	</div>
+	<div data-ng-show="backgroundProcess">
+		<img src="http://cdn.seven49.net/common/images/loading/ajax-loader-2.gif" alt="{{ text-cms_waitemplatedownloadsearchresultinfoquery }}" />
+	</div>
+	<span data-ng-show="noResults"><strong>{{Text-cms_waitemplatesearchnoresults}}</strong></span>
+	<div class="hits" data-ng-show="uiResult.length > 0">{{Text-cms_waitemplatesearchresultinfo}}</div>
+	<ul class="search-results" data-ng-show="uiResult.length > 0">
+		<li data-ng-repeat="result in uiResult" class="result-item {{ result.FileExtension|lowercase }}"><i class="fa"></i><a href="{{ result.Url }}">{{ result.Title }}</a><div class="snippet">{{ result.Snippet }}</div></li>
+	</ul>
+</div>
+
+
+<script src="/template/js/searchController.js"></script>
+
+
+<script>
+ var searchApp = angular.module("searchApp", []);
+  searchApp.controller('searchController', searchController);
+</script>
+
