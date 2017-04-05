@@ -25,13 +25,22 @@ mustache style: https://mustache.github.io/mustache.5.html
 
 According to mustache variables like {{myVariable}} will be html encoded. If you wish to use not encoded variables you have to write them like {{{ myVariable }}} oder {{& myVariable }}!
 
+## Tagging system
+
+* in the backend you have the possibility to "tag" every element. This will output a class additionally to the default classes like "Object", "Head", "Text", "Image", "Link", "Download"
+
 
 ## Call a single elements of content
 
-* every content element can be selected like: {{{content[CSSSelector]}}} - the inner html will be rendered.
+* every content element can be selected like: {{{pagecontent[CSSSelector]}}} - the inner html will be rendered.
+* if the pagecontent contains more than 1 "CSSSelector", all elements with this class will be rendered
 
-Example:
-<code>{{{content[.Link1]}}}</code>
+Example:  
+<code>{{{pagecontent[.your-fancy-class]}}}</code>
+
+select outer html:  
+<code>{{{pagecontent-outerhtml[.your-fancy-class]}}}</code>
+
 
 
 ## Server side includes
